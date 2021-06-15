@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+        <link rel="stylesheet" href="./rel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making live comments</title>
+</head>
+<body>
+    <header>
+        <h1>Chris' notepage</h1>
+    </header>
+    <section>
+        <div>
+            <form class="pure-form" id="comment-form">
+                <div class="comment-form">
+                    <div class="left-side">
+                         <div class="row">
+                             <label><b> Name :</b></label>
+                             <input type="text" required placeholder="enter your name" id="new_comment_name"> <br>
+                        </div>
+                        <div>
+                            <label ><b> Email :</b></label>
+                             <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                          </div>
+                          <div class="row">
+                              <label><b> Note :</b></label>
+                              <textarea placeholder="enter comment text" required id="new_comment_text" rows="30"></textarea>
+                          </div>
+                    </div>
+                   <div class="right-side">
+                          <button type="submit" class="button-secondary pure-button">Add Note</button>
+                   </div>
+               </div>
+              </form>
+              
+        </div>
+    </section>
+    <div class="commentslist">
+            <div id="comment-info">
+
+            </div>
+            <!-- <div class="comment-info">
+                Add your comments here
+            </div> -->
+    </div>
+    <script src="./injun.js"></script>
+    
+</body>
+</html>
